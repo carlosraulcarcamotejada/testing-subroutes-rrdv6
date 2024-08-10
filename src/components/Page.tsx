@@ -10,11 +10,11 @@ interface PageProps {
 }
 
 const SIDE_NAV_SECTIONS: PageProps[] = [
-  { id: 1, path: "sub-section-1", pageName: "Sub-Section 1" },
-  { id: 2, path: "sub-section-2", pageName: "Sub-Section 2" },
-  { id: 3, path: "sub-section-3", pageName: "Sub-Section 3" },
-  { id: 4, path: "sub-section-4", pageName: "Sub-Section 4" },
-  { id: 5, path: "sub-section-5", pageName: "Sub-Section 5" },
+  { id: 1, path: "sub-section-1", pageName: "sub section 1" },
+  { id: 2, path: "sub-section-2", pageName: "sub section 2" },
+  { id: 3, path: "sub-section-3", pageName: "sub section 3" },
+  { id: 4, path: "sub-section-4", pageName: "sub section 4" },
+  { id: 5, path: "sub-section-5", pageName: "sub section 5" },
 ];
 
 const Page: FC<PageProps> = memo(({ pageName }): JSX.Element => {

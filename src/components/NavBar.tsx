@@ -40,6 +40,7 @@ const NavBar: FC = (): JSX.Element => {
             key={id}
             to={path}
             className={({ isActive }) => `
+                                        capitalize
                                         ${
                                           isActive
                                             ? "bg-gradient-to-b from-teal-400 to-blue-500"
@@ -80,7 +81,7 @@ const NavBar: FC = (): JSX.Element => {
                                         ${!isActive ? "dark:text-gray-300" : ""}
 
 
-
+                                        
                                         px-3
                                         py-1.5 
                                         rounded-lg 

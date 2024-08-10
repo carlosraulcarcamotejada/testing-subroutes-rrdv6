@@ -13,7 +13,7 @@ const SideNavList: FC<SideNavListPros> = ({
 }): JSX.Element => {
   return (
     <nav className="flex flex-col justify-start gap-y-4 w-full h-screen border-r dark:border-r-gray-800 bg-white dark:bg-black">
-      <div className="text-gray-300 h-12 grid place-content-center bg-blue-950 font-bold text-lg bg-gradient-to-r from-teal-600 to-cyan-600">
+      <div className="h-12 grid place-content-center bg-blue-950 font-bold text-lg bg-gradient-to-r from-teal-600 to-cyan-600 text-gray-950">
         {pageName}
       </div>
       {sideNavItems.map((sideNavItem) => {
