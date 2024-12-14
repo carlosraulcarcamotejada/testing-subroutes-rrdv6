@@ -1,6 +1,6 @@
 import { FC, JSX, memo } from "react";
 import { SideNavList } from "./SideNavList";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { ContentPage } from "./ContentPage";
 
 interface PageProps {
@@ -26,6 +26,8 @@ const Page: FC<PageProps> = memo(({ pageName }): JSX.Element => {
       </div>
       {/* Routes */}
       <Routes>
+        <Route index element={<Navigate to={SIDE_NAV_SECTIONS[0].path} />} />
+
         {SIDE_NAV_SECTIONS.map((sideNavSectionItem) => (
           <Route
             key={sideNavSectionItem.id}
