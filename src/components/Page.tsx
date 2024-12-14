@@ -24,7 +24,6 @@ const Page: FC<PageProps> = memo(({ pageName }): JSX.Element => {
       <div className="w-48 fixed left-0 top-14">
         <SideNavList sideNavItems={SIDE_NAV_SECTIONS} pageName={pageName} />
       </div>
-      {/* <div className="text-center text-4xl text-gray-300">mis pelotas</div> */}
       {/* Routes */}
       <Routes>
         {SIDE_NAV_SECTIONS.map((sideNavSectionItem) => (

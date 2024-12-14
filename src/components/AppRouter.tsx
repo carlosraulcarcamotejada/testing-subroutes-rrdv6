@@ -18,11 +18,6 @@ const AppRouter: FC = (): JSX.Element => {
           element={<Page key={page.id} {...page} />}
         />
       ))}
-
-      <Route
-          path="*"
-          element={<Page pageName="Home Page" id={0} path="/" />}
-        />
     </Routes>
   );
 };
